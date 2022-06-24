@@ -1,0 +1,139 @@
+:root{
+    --height-message:86px;
+    --height-message-header:30px;
+    
+
+}
+
+.custom_message{
+    width: 100%;
+    height: 40px;
+    
+    text-align: center;
+    border-radius: 2.5px;
+}
+.text-message{
+    line-height: 40px;
+}
+.custom_message.message-success{
+    color: #155724;
+    background-color: #00bc8c;
+    border-color: #00a379;
+}
+.custom_message.message-error{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.form-message{
+    font-size: 13px;
+    color: red;
+}
+.custom-img{
+    width: 100px;
+}
+/* show products */
+.img_top{
+    width: 100%;
+}
+.img_big{
+    width: 80%;
+    height: auto;
+    max-height: 90%;
+    margin-bottom: 10px;
+}
+.img_sub{
+    height: 100px;
+    width:80%;
+    overflow: hidden;
+    overflow-x:scroll;
+    
+}
+.img_sub_overfolw{
+    
+    display: flex;
+   
+}
+.div_bottom{
+    width: auto;
+    margin-right: 10px;
+    
+    cursor: pointer;
+}
+
+.div_bottom-img{
+    object-fit: cover;
+    width:100%;
+    height: auto;
+    max-height: 100px;
+    
+}
+.div_right{
+    width: 100%;
+    height: 100%;
+}
+.div_right-top{
+    width: 100%;
+    height: 60%;
+}
+.div_right-bottom{
+    width: 100%;
+    height: 40%;
+}.background_show{
+    background-color: #fff;
+    box-shadow: 5px 10px #888888;
+    padding: 10px;
+}
+.div_right-bottom p {
+    margin-left: 20px;
+}
+/*message */
+.message.show{
+    width: 250px;
+    height:var(--height-message);
+    background-color: #fff;
+    box-shadow: 1px 2px #ccc ;
+    border-radius: 5px;
+    padding: 8px;
+    float: right;
+    border: 1px solid #8888;
+    transform: translateX(110%);
+    animation: animation 0.8s linear;
+}
+@keyframes animation {
+    from{
+        transform: translateX(110%);
+        opacity: 0;
+    }to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.message_header{
+border-bottom: 1px solid #ccc;
+width: 100%;
+display: flex;
+height: var(--height-message-header);
+align-items: center;
+color: #000;
+
+
+}
+.message_header h4{
+    flex: 1;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+.message_header i{
+    font-size: 15px;
+    color: #00bc8c;
+    padding: 5px;
+}
+.message_body{
+    width: 100%;
+    height: calc(var(--height-message) - var(--height-message-header) - 16px);
+    display: flex;
+    align-items: center;   
+    color: #000;
+}
